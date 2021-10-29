@@ -4,10 +4,10 @@ USE hike_db
 
 CREATE TABLE hikes (
     id INTEGER  AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    location VARCHAR(30) NOT NULL,
+    names VARCHAR(30) NOT NULL,
+    locations VARCHAR(30) NOT NULL,
     elevation_gain INTEGER,
-    length INTEGER,
+    distance DECIMAL(5,2),
     difficulty INTEGER,
     dog_friendly BOOLEAN,
     permit BOOLEAN
