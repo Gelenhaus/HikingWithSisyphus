@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HikingWithSisyphus</title>
+</head>
+
+<body>
+
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/Gelenhaus/HikingWithSisyphus">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"  width="112" height="100">
+      </a>
+      <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/public/register.html">
+          Register
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="https://bearfoottheory.com/best-hikes-in-utah/">
+            Best hikes in Utah!
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="/public/index.html">
+              Homepage
+            </a>
+            <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+              
+            </a>
+            <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+              
+            </a>
+            <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+              
+            </a>
+            <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+              
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+              
+            </a>
+            <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+              
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" target="_blank" href="www.twitter.com">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>
+                  Tweet about us!
+                </span>
+              </a>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-1">
+        
+    <h1 class="h1 pt-4 text-center">Popular Hikes</h1>
+
+    <div class="col-12">
+            <div class="row" id="containerCards">
+            </div>
+
+            <div class="row border-top border-dark">
+                <div class="col-12 mt-4">
+
+                    <div class="card-deck">
+                       
+                        <div class="card mb-4">
+                          
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="https://bearfoottheory.com/wp-content/uploads/2019/02/Angels-Landing-683x1024.jpeg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                        
+                            <div class="card-body">
+                              
+                                <h4 class="card-title">ANGEL’S LANDING, ZION NATIONAL PARK</h4>
+                             
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 4.1 miles</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 1,617 feet</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Strenuous</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: No</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                                
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                      
+                        <div class="card mb-4">
+                            
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="https://bearfoottheory.com/wp-content/uploads/2019/02/Zion-Narrows-Best-Hikes-in-Utah.jpeg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                           
+                            <div class="card-body">
+                              
+                                <h4 class="card-title">THE NARROWS</h4>
+                              
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 5 to 16 miles</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 206-1,017 feet</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Easy to Hard</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: Only for top</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                                
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                      
+                        <div class="card mb-4">
+                            
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="https://bearfoottheory.com/wp-content/uploads/2021/02/Subway-Zion-2-1024x683.jpeg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            
+                            <div class="card-body">
+                             
+                                <h4 class="card-title">THE SUBWAY, ZION NATIONAL PARK</h4>
+                            
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 9-9.5 miles</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 1,300 feet for the bottom-up hike</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Strenous</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: Yes</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                                
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                      
+                    </div>
+                   
+                    <div class="card-deck">
+                     
+                        <div class="card mb-4">
+                       
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="https://bearfoottheory.com/wp-content/uploads/2019/02/The-Wave-768x1021.jpeg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                         
+                            <div class="card-body">
+                              
+                                <h4 class="card-title">THE WAVE, VERMILLION CLIFFS WILDERNESS</h4>
+                               
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 5.2 miles</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 400 feet</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Moderate</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: Yes</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                               
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                   
+                        <div class="card mb-4">
+                            
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src=https://bearfoottheory.com/wp-content/uploads/2019/03/Golden-Cathedral-trail-Utah2-1024x683.jpeg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                          
+                            <div class="card-body">
+                           
+                                <h4 class="card-title">GOLDEN CATHEDRAL TRAIL</h4>
+                          
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 9.1 miles</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 1,581 feet</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Moderate</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: No</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                              
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-4">
+                           
+                            <div class="view overlay">
+                                <img class="card-img-top"
+                                    src="https://bearfoottheory.com/wp-content/uploads/2019/02/Paria-Canyon-_-Best-Hikes-in-Utah-1.jpg"
+                                    alt="Card image cap">
+                                <a href="#!">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            
+                            <div class="card-body">
+                              
+                                <h4 class="card-title">PARIA CANYON BACKPACKING TRAIL</h4>
+                               
+                                <p class="card-text">
+                                    <ul>
+                                        <li>
+                                            <strong>Length: 38 miles </strong>
+                                        </li>
+                                        <li>
+                                            <strong>Elevation gain: 1,130 feet decline</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Difficulty: Moderate</strong>
+                                        </li>
+                                        <li>
+                                            <strong>Permit: Yes</strong>
+                                        </li>
+                                    </ul>
+                                </p>
+                                
+                                <button type="button" class="btn btn-light-blue btn-md">Rate Hike</button>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row"></div>
+        </div>
+
+        <div class="col-lg-2 col-sm-12" id="userLocation"></div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+<section>
+    
+
+</section>
+</body>
+
+</html>
+    <footer>
+    
+
+        
+        <div class="footer-copyright text-center py-3">
+        </div>
+        
+
+    </footer>
+    <section>
+        
+
+    </section>
+</body>
+
+</html>
