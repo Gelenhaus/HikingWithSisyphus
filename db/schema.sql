@@ -12,4 +12,3 @@ CREATE TABLE hikes (
     dog_friendly BOOLEAN,
     permit BOOLEAN
 )
-

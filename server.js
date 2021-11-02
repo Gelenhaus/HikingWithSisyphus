@@ -3,7 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-const helpers = require('./utilis/helpers');
+const helpers = require('./utils/helper');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
@@ -32,30 +32,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.use(require('./controllers/'));
 
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
-});
-
-app.get("/public/register.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/register.html"));
-});
-
-
-
-app.get("/public/hikes.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/hikes.html"));
-});
-
-
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
-});
-
-
-
-//turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now listening'));
-  });
+  app.listen(PORT, () => console.log('Now listening'));
+});
