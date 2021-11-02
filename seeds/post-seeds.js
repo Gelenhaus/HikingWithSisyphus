@@ -10,6 +10,14 @@ const postData = [
     {
         title: "The Wave",
         user_id: 2
+    },
+    {
+        title: "Delicate Arch",
+        user_id: 3
+    },
+    {
+        title: "Mount Timpanogos",
+        user_id: 4
     }
 ]
 

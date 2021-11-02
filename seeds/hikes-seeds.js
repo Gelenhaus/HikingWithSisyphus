@@ -5,7 +5,7 @@ const { Hikes } = require('../models');
 const hikesData = [
   {
     name: 'Angels Landing',
-    location: 'Zions National Park Springdale, UT ',
+    location: 'National Park Springdale, UT ',
     elevation_gain: '1,617 ft',
     distance: '4.4 mi',
     difficulty: 'Hard',
