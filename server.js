@@ -14,15 +14,23 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.send('Hello there!');
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
+
+app.get("/public/register.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "/public/register.html"));
+});
+
+
 
 app.get("/public/hikes.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/hikes.html"))
+    res.sendFile(path.join(__dirname, "/public/hikes.html"));
 });
 
+
+
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/index.html"))
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.listen(PORT, () => {
