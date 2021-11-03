@@ -5,7 +5,7 @@
 
 ## Description 
 
-
+This app is exclusively for the most avid hikers! This app gains you access to a list of top hikes in Utah with persistent ratings from our users. Simply register and log in. You are mere seconds away from seeing how other hikers rate these tailored hiking trails.
 
 
 ## Table of Contents 
