@@ -32,14 +32,7 @@ router.get('/', (req, res) => {
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
-<<<<<<< HEAD
-    });
-});
-
-module.exports = router
-=======
     })
 })
 
 module.exports = router;
->>>>>>> 3435c64e497bff87ff15bd4b6034056a7c4cba5b
