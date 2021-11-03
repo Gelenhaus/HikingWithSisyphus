@@ -24,6 +24,9 @@
     "start": "node server.js",
     "seed": "node seeds/index.js"
   },
+  "engines": {
+    "node": "14.17.6"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
