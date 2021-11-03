@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+}
+
+.bg {
+  
+  background-image: url("../Images/morningarch.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hide {
+  display: none;
+}
+
+body, .footer {
+  background: rgb(131,58,180);
+  background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(97,59,59,0.8701855742296919) 48%, rgba(252,176,69,1) 100%);
+}
+
