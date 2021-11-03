@@ -5,7 +5,7 @@ const { Hikes } = require('../models');
 const hikesData = [
   {
     name: 'Angels Landing',
-    location: 'National Park Springdale, UT ',
+    location: 'Springdale, UT ',
     elevation_gain: '1,617 ft',
     distance: '4.4 mi',
     difficulty: 'Hard',
@@ -15,7 +15,7 @@ const hikesData = [
   },
   {
     name: 'The Wave',
-    location: 'Vermillion Cliffs Kanab, UT',
+    location: 'Kanab, UT',
     elevation_gain: '1,233 ft',
     distance: '6.7 mi',
     difficulty: 'Moderate',
@@ -25,7 +25,7 @@ const hikesData = [
   },
   {
     name: 'Delicate Arch',
-    location: 'Arches National Park Moab, UT',
+    location: 'Moab, UT',
     elevation_gain: '629 ft',
     distance: '3.2 mi',
     difficulty: 'Moderate',
@@ -41,8 +41,68 @@ const hikesData = [
     difficulty: 'Hard',
     dog_friendly: 'Yes',
     permit: 'No',
-    user_id: 3
-  }
+    user_id: 4
+  },
+  {
+    name: 'Lake Blanche',
+    location: 'Salt Lake City, UT',
+    elevation_gain: '2,808 ft',
+    distance: '6.8 mi',
+    difficulty: 'Hard',
+    dog_friendly: 'No',
+    permit: 'No',
+    user_id: 5
+  },
+  {
+    name: 'Observation Point',
+    location: 'Springdale, UT',
+    elevation_gain: '6,521',
+    distance: '8 mi',
+    difficulty:'Hard',
+    dog_friendly: 'No',
+    permit: 'No',
+    user_id: 6
+  },
+  {
+    name: 'Mount Olympus',
+    location: 'Salt Lake City, UT',
+    elevation_gain: '4,156 ft',
+    distance: '7.8 mi',
+    difficulty: 'Hard',
+    dog_friendly: 'Yes',
+    permit: 'No',
+    user_id: 4
+  },
+  {
+    name: 'Donut Falls',
+    location: 'Salt Lake City, UT',
+    elevation_gain: '308 ft',
+    distance: '1.5 mi',
+    difficulty: 'Easy',
+    dog_friendly: 'No',
+    permit: 'No',
+    user_id: 1
+  },
+  {
+    name: 'The Great Gallery',
+    location: 'Hanksville, UT',
+    elevation_gain: '1,646 ft',
+    distance: '10.6 mi',
+    difficulty: 'Hard',
+    dog_friendly: 'No',
+    permit: 'No',
+    user_id: 7
+ },
+ {
+   name: 'Mesa Arch',
+   location: 'Moab, UT',
+   elevation_gain: '88 ft',
+   distance: '.7 mi',
+   difficulty: 'Easy',
+   dog_friendly: 'No',
+   permit: 'No',
+   user_id: 7
+ }
 
 ]
 
