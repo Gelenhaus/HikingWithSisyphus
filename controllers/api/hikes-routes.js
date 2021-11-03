@@ -5,14 +5,18 @@ const withAuth = require('../../utils/auth')
 
 
 router.get('/', (req, res) => {
-    Post.findAll({
+
+    Hikes.findAll({
         attributes: [
             'id',
-            'title',
-            //'content',
-            'create_at'
+            'name',
+            'location',
+            'elevation_gain',
+            'distance',
+            'difficulty',
+            'dog_friendly',
+            'permit'
         ],
-        order: [['created_at', 'DESC']],
         include: [
             {
                 model: Comment,
@@ -28,18 +32,11 @@ router.get('/', (req, res) => {
             }
         ]
     })
-    .then(dbPostData => res.json(dbPostData))
+    .then(dbhikesData => res.json(dbhikesData))
     .catch(err => {
         console.log(err);
         res.status(500).json(err);
-<<<<<<< HEAD
-    });
-});
-
-module.exports = router
-=======
     })
 })
 
 module.exports = router;
->>>>>>> 3435c64e497bff87ff15bd4b6034056a7c4cba5b
