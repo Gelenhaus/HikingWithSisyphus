@@ -16,6 +16,7 @@ Comment.findAll()
     res.status(500).json(err)
 })
 })
+<<<<<<< HEAD
 
 router.post("/", (req, res) => {
 Comment.create({
@@ -30,6 +31,22 @@ Comment.create({
 })
 })
 
+=======
+
+router.post("/", (req, res) => {
+Comment.create({
+    feedback: req.body.feedback,
+    user_id: req.body.user_id,
+    post_id: req.body.post_id
+})
+.then(dbCommentData => res.json(dbCommentData))
+.catch(err => {
+    console.log(err);
+    res.status(400).json(err)
+})
+})
+
+>>>>>>> camerons-branch
 router.delete("/:id", (req, res) => {
 Comment.destroy({
     where: {
