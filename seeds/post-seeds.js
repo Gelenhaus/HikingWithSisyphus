@@ -20,7 +20,7 @@ const postData = [
         user_id: 4
     },
     {
-        title: "Lake Blanch",
+        title: "Lake Blanche",
         user_id: 5
     },
     {
