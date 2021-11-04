@@ -1,0 +1,37 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Review
+  </h2>
+  <form class="edit-post-form">
+    <div>
+      <label for="post-title">Name of hike</label>
+      <input name="post-title" type="text" value="{{post.title}}" />
+      <br>
+      <br>
+      <label for="post-text">Review</label>
+      <input name="post_text" type="text" value="{{post.post_text}}" />
+    </div>
+    <div>
+      <a href="/post/{{post.id}}">{{post.comments.length}} Comment(s)</a>
+    </div>
+    <button type="submit">Save Review</button>
+    <button type="button" class="delete-post-btn">Delete post</button>
+  </form>
+</article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+{{> comments post.comments}}
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
