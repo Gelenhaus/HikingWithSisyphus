@@ -2,6 +2,7 @@ async function commentFormHandler(event) {
     event.preventDefault();
   
     const feedback_text = document.querySelector('textarea[name="feedback_body"]').value.trim();
+
     const post_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
@@ -12,6 +13,8 @@ async function commentFormHandler(event) {
         body: JSON.stringify({
           post_id,
           feedback_text
+
+ 
         }),
         headers: {
           'Content-Type': 'application/json'

@@ -1,4 +1,4 @@
-const sequelize = require('../config/connection');
+
 const { Comment } = require('../models');
 
 const commentData = [
