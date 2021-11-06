@@ -4,7 +4,7 @@
   
   .bg {
     
-    background-image: url("../Images/morningarch.jpg");
+    background-image: url("/images/morningarch.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
