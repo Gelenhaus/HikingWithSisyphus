@@ -1,6 +1,9 @@
 {
   "name": "hikingwithsisyphus",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "Learn about your options for hiking public trails.",
   "main": "server.js",
   "dependencies": {
