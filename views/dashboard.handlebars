@@ -1,0 +1,31 @@
+<section>
+  <h2>Create New Review!</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Name of hike</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-text">Review</label>
+      <input id="post-text" name="post-text"/>
+    </div>
+    <button type="submit" class="btn">SUBMIT</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Reviews</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Review</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>
