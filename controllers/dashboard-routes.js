@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment, Hikes } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, (req, res) => {
+router.get('/', (req, res) => {
     console.log(req.session);
     console.log('======================');
     Post.findAll({
@@ -15,12 +15,12 @@ router.get('/', withAuth, (req, res) => {
         'post_url',
         'title',
         'created_at',
-        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = post_id)')]
       ],
       include: [
         {
           model: Comment,
-          attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+          attributes: ['id', 'feedback', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
@@ -42,7 +42,7 @@ router.get('/', withAuth, (req, res) => {
       });
   });
   
-  router.get('/edit/:id', withAuth, (req, res) => {
+  router.get('/edit/:id', (req, res) => {
     Post.findByPk(req.params.id, {
       attributes: [
         'id',
@@ -54,7 +54,7 @@ router.get('/', withAuth, (req, res) => {
       include: [
         {
           model: Comment,
-          attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+          attributes: ['id', 'feedback', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']
