@@ -7,26 +7,8 @@
 
 This app is exclusively for the most avid hikers! This app gains you access to a list of top hikes in Utah with persistent ratings from our users. Simply register and log in. You are mere seconds away from seeing how other hikers rate these tailored hiking trails.
 
-
-## Table of Contents 
-
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Features](#features)
-* [Contributions](#contributions)
-* [Tests](#tests)
-* [Questions](#questions)
-
-
-## Installation
-
-
-
-## Usage 
-
-
+Live url:
+https://dippidydoo19.herokuapp.com/
 
 ## License
 
@@ -34,8 +16,11 @@ This app is exclusively for the most avid hikers! This app gains you access to a
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 
-## Features
-
+## Built with
+* MySQL2
+* Sequelize
+* Express.js
+* Handlebars.js
 
 
 ## Contributions
@@ -44,13 +29,3 @@ This app is exclusively for the most avid hikers! This app gains you access to a
 * Gerrit Elenbaas
 * Cameron Charlesworth
 * Sheldon Collins
-
-## Tests
-
-
-
-## Questions
-
-
-
-
